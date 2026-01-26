@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@utility text-trim {
+    text-box: trim-both cap alphabetic;
+}
+@font-face {
+    font-family: "Inter Tight";
+    src: url(assets/fonts/InterTight-VariableFont_wght.ttf);
+}
+
+@theme{
+    --font-intert: "Inter Tight";
+    --color-amdb: #000640;
+}
+
+body{
+    @apply font-intert text-amdb
+}
+.line{
+    @apply block h-px bg-amdb 
+}
+
+#hero {
+    @apply w-full h-screen flex items-end justify-between px-15.5 py-10.5 
+}
+
+#projects{
+
+}

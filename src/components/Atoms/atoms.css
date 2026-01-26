@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import "../../index.css";
+
+body{
+    cursor: url("../../images/cursor.png"), auto;
+}
+.main-btn {
+    @apply w-max rounded-full flex gap-12 p-4.5 text-sm font-bold text-trim uppercase border border-amdb cursor-pointer
+}
+.main-btn svg{
+    @apply aspect-square w-5.75
+}
