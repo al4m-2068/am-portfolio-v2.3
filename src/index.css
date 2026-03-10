@@ -3,27 +3,29 @@
 @utility text-trim {
     text-box: trim-both cap alphabetic;
 }
-@font-face {
-    font-family: "Inter Tight";
-    src: url(assets/fonts/InterTight-VariableFont_wght.ttf);
-}
 
 @theme{
-    --font-intert: "Inter Tight";
+    --font-stackn: "Stack Sans Notch", sans-serif;
+    --font-stackt: "Stack Sans Text", sans-serif;
     --color-amdb: #000640;
 }
 
 body{
-    @apply font-intert text-amdb
+    @apply font-stackt text-white bg-amdb
 }
+#root{
+    @apply overflow-x-hidden scroll-smooth
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
 .line{
-    @apply block h-px bg-amdb 
+    @apply block h-px bg-white
 }
-
-#hero {
-    @apply w-full h-screen flex items-end justify-between px-15.5 py-10.5 
+.line-vert{
+    @apply block w-px h-full bg-white
 }
-
-#projects{
-
+.line-vert-cust{
+    @apply block w-px bg-white
 }
